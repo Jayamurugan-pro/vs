@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack Resizer - Stack flow</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Apply some basic styling to the body and container */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Style the header */
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        header h1 {
+            color: #333;
+        }
+
+        /* Style the form and its elements */
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Style the submit button */
+        .button-container {
+            text-align: center;
+        }
+
+        button[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333; /* Header background color */
+            color: #fff; /* Header text color */
+            padding: 20px 0; /* Padding around the header */
+            text-align: center; /* Center-align text */
+        }
+
+        /* Logo styles */
+        .logo {
+            font-size: 24px; /* Logo font size */
+            font-weight: bold; /* Logo font weight */
+        }
+
+        /* Navigation menu styles */
+        nav ul {
+            list-style: none; /* Remove list bullet points */
+            margin-top: 20px; /* Spacing below logo */
+        }
+
+        nav ul li {
+            display: inline; /* Display menu items horizontally */
+            margin-right: 20px; /* Spacing between menu items */
+        }
+
+        nav ul li a {
+            text-decoration: none; /* Remove underlines from links */
+            color: #fff; /* Menu item text color */
+            font-weight: bold; /* Menu item font weight */
+        }
+
+        /* Add a hover effect to menu items */
+        nav ul li a:hover {
+            color: #0077ff; /* Hovered menu item color */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo" style="text-decoration: underline;">Stack flow</div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/Stack-Solver">Stack Solver</a></li>
+                <li><a href="/Stack-Resizer">Stack Resizer</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <header>
+            <h1 style="text-decoration: none; color: white;">Stack Resizer</h1>
+        </header>
+        <main>
+            <form action="/Stack-Resizer-finish" method="post" enctype="multipart/form-data">
+                <div class="input-group">
+                    <label for="lang">File:</label>
+                    <input type="file" id="lang" name="img" required>
+                </div>
+                <div class="input-group">
+                    <label for="code">Width Size in Pixel:</label>
+                    <input type="number" id="code" name="sizew" required>
+                </div>
+                <div class="input-group">
+                    <label for="code">Height Size in Pixel:</label>
+                    <input type="number" id="code" name="sizeh" required>
+                </div>
+                <div class="button-container">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </main>
+    </div>
+    <div class="container">
+        <h1 style="font-size: 28px;color: #333;">Experience the Ultimate Convenience</h1>
+        <p style="font-size: 18px;color: #666;line-height: 1.5;padding: 20px;">With our cutting-edge photo resizer tool. Say goodbye to the hassle of finding the right software – our tool delivers lightning-fast resizing results, ensuring your images are optimized for web use without compromising quality. Whether you're a professional photographer or a casual blogger, our user-friendly photo resizer simplifies the process, saving you time and enhancing your website's performance. Join thousands of satisfied users who trust our tool for seamless image optimization. Try it today and transform your visuals effortlessly!</p>
+    </div>
+</body>
+</html>
